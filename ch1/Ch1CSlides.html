@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+<body>
+
+<h2 class="w3-center">Manual Slideshow</h2>
+
+<div class="w3-content w3-display-container">
+<img class="mySlides" src="1c/Slide1.JPG">
+<img class="mySlides" src="1c/Slide2.JPG">
+<img class="mySlides" src="1c/Slide3.JPG">
+<img class="mySlides" src="1c/Slide4.JPG">
+<img class="mySlides" src="1c/Slide5.JPG">
+<img class="mySlides" src="1c/Slide6.JPG">
+<img class="mySlides" src="1c/Slide7.JPG">
+<img class="mySlides" src="1c/Slide8.JPG">
+<img class="mySlides" src="1c/Slide9.JPG">
+<img class="mySlides" src="1c/Slide10.JPG">
+<img class="mySlides" src="1c/Slide11.JPG">
+<img class="mySlides" src="1c/Slide12.JPG">
+<img class="mySlides" src="1c/Slide13.JPG">
+<img class="mySlides" src="1c/Slide14.JPG">
+<img class="mySlides" src="1c/Slide15.JPG">
+<img class="mySlides" src="1c/Slide16.JPG">
+<img class="mySlides" src="1c/Slide17.JPG">
+<img class="mySlides" src="1c/Slide18.JPG">
+<img class="mySlides" src="1c/Slide19.JPG">
+<img class="mySlides" src="1c/Slide20.JPG">
+<img class="mySlides" src="1c/Slide21.JPG">
+<img class="mySlides" src="1c/Slide22.JPG">
+<img class="mySlides" src="1c/Slide23.JPG">
+<img class="mySlides" src="1c/Slide24.JPG">
+<img class="mySlides" src="1c/Slide25.JPG">
+<img class="mySlides" src="1c/Slide26.JPG">
+<img class="mySlides" src="1c/Slide27.JPG">
+<img class="mySlides" src="1c/Slide28.JPG">
+<img class="mySlides" src="1c/Slide29.JPG">
+<img class="mySlides" src="1c/Slide30.JPG">
+
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
+</html>
