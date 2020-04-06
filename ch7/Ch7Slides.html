@@ -1,1 +1,250 @@
-Ch6Slides.html
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+</head>
+<body onkeypress="myKey(event.which)">
+
+<div class="slideshow-container">
+<div class="mySlides fade"><div class="numbertext">1/87</div><img src="c7_slides/Slide1.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">2/87</div><img src="c7_slides/Slide2.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">3/87</div><img src="c7_slides/Slide3.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">4/87</div><img src="c7_slides/Slide4.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">5/87</div><img src="c7_slides/Slide5.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">6/87</div><img src="c7_slides/Slide6.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">7/87</div><img src="c7_slides/Slide7.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">8/87</div><img src="c7_slides/Slide8.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">9/87</div><img src="c7_slides/Slide9.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">10/87</div><img src="c7_slides/Slide10.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">11/87</div><img src="c7_slides/Slide11.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">12/87</div><img src="c7_slides/Slide12.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">13/87</div><img src="c7_slides/Slide13.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">14/87</div><img src="c7_slides/Slide14.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">15/87</div><img src="c7_slides/Slide15.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">16/87</div><img src="c7_slides/Slide16.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">17/87</div><img src="c7_slides/Slide17.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">18/87</div><img src="c7_slides/Slide18.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">19/87</div><img src="c7_slides/Slide19.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">20/87</div><img src="c7_slides/Slide20.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">21/87</div><img src="c7_slides/Slide21.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">22/87</div><img src="c7_slides/Slide22.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">23/87</div><img src="c7_slides/Slide23.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">24/87</div><img src="c7_slides/Slide24.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">25/87</div><img src="c7_slides/Slide25.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">26/87</div><img src="c7_slides/Slide26.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">27/87</div><img src="c7_slides/Slide27.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">28/87</div><img src="c7_slides/Slide28.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">29/87</div><img src="c7_slides/Slide29.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">30/87</div><img src="c7_slides/Slide30.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">31/87</div><img src="c7_slides/Slide31.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">32/87</div><img src="c7_slides/Slide32.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">33/87</div><img src="c7_slides/Slide33.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">34/87</div><img src="c7_slides/Slide34.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">35/87</div><img src="c7_slides/Slide35.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">36/87</div><img src="c7_slides/Slide36.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">37/87</div><img src="c7_slides/Slide37.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">38/87</div><img src="c7_slides/Slide38.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">39/87</div><img src="c7_slides/Slide39.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">40/87</div><img src="c7_slides/Slide40.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">41/87</div><img src="c7_slides/Slide41.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">42/87</div><img src="c7_slides/Slide42.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">43/87</div><img src="c7_slides/Slide43.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">44/87</div><img src="c7_slides/Slide44.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">45/87</div><img src="c7_slides/Slide45.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">46/87</div><img src="c7_slides/Slide46.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">47/87</div><img src="c7_slides/Slide47.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">48/87</div><img src="c7_slides/Slide48.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">49/87</div><img src="c7_slides/Slide49.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">50/87</div><img src="c7_slides/Slide50.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">51/87</div><img src="c7_slides/Slide51.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">52/87</div><img src="c7_slides/Slide52.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">53/87</div><img src="c7_slides/Slide53.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">54/87</div><img src="c7_slides/Slide54.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">55/87</div><img src="c7_slides/Slide55.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">56/87</div><img src="c7_slides/Slide56.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">57/87</div><img src="c7_slides/Slide57.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">58/87</div><img src="c7_slides/Slide58.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">59/87</div><img src="c7_slides/Slide59.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">60/87</div><img src="c7_slides/Slide60.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">61/87</div><img src="c7_slides/Slide61.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">62/87</div><img src="c7_slides/Slide62.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">63/87</div><img src="c7_slides/Slide63.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">64/87</div><img src="c7_slides/Slide64.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">65/87</div><img src="c7_slides/Slide65.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">66/87</div><img src="c7_slides/Slide66.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">67/87</div><img src="c7_slides/Slide67.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">68/87</div><img src="c7_slides/Slide68.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">69/87</div><img src="c7_slides/Slide69.JPG" style=width:100%><div class="text"></div></div>
+
+<div class="mySlides fade"><div class="numbertext">70/87</div><img src="c7_slides/Slide70.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">71/87</div><img src="c7_slides/Slide71.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">72/87</div><img src="c7_slides/Slide72.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">73/87</div><img src="c7_slides/Slide73.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">74/87</div><img src="c7_slides/Slide74.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">75/87</div><img src="c7_slides/Slide75.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">76/87</div><img src="c7_slides/Slide76.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">77/87</div><img src="c7_slides/Slide77.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">78/87</div><img src="c7_slides/Slide78.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">79/87</div><img src="c7_slides/Slide79.JPG" style=width:100%><div class="text"></div></div>
+
+<div class="mySlides fade"><div class="numbertext">80/87</div><img src="c7_slides/Slide80.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">81/87</div><img src="c7_slides/Slide81.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">82/87</div><img src="c7_slides/Slide82.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">83/87</div><img src="c7_slides/Slide83.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">84/87</div><img src="c7_slides/Slide84.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">85/87</div><img src="c7_slides/Slide85.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">86/87</div><img src="c7_slides/Slide86.JPG" style=width:100%><div class="text"></div></div>
+<div class="mySlides fade"><div class="numbertext">87/87</div><img src="c7_slides/Slide87.JPG" style=width:100%><div class="text"></div></div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="plusSlides(-1)"></span> 
+  <span class="dot" onclick="showSlides(0)"></span> 
+  <span class="dot" onclick="plusSlides(1)"></span> 
+</div>
+
+<script>
+
+
+
+
+  
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+function myKey(k){
+	//alert(k);
+    if(k==32) plusSlides(1);
+    else if (k==122)plusSlides(-1);
+  }
+  </script>
+
+</body>
+</html> 
